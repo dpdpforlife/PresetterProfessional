@@ -1,11 +1,10 @@
-import bpy
+import bpy, os
 from bpy.types import Operator, Menu
 from bl_operators.presets import AddPresetBase
 
-import os
-
 script_file = os.path.realpath(__file__)
 directory = os.path.dirname(script_file)
+addon_name = os.path.basename(os.path.normpath(directory))
 
 class SNAP_MT_draw_presets(Menu):
     bl_label = "Snapping Presets"
@@ -43,7 +42,7 @@ class AddPresetSnap(AddPresetBase, Operator):
 def snap_func(self, context):
     layout = self.layout
 
-    prefs = bpy.context.preferences.addons['PresetterProfessional'].preferences
+    prefs = bpy.context.preferences.addons[addon_name].preferences
     layout = self.layout
 
     if prefs.snap == True:

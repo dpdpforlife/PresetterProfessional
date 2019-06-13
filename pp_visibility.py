@@ -1,7 +1,10 @@
-import bpy
+import bpy, os
 from bpy.types import Operator, Menu
 from bl_operators.presets import AddPresetBase
 
+script_file = os.path.realpath(__file__)
+directory = os.path.dirname(script_file)
+addon_name = os.path.basename(os.path.normpath(directory))
 
 class VIS_MT_draw_presets(Menu):
     bl_label = "Visibility Presets"
@@ -55,7 +58,7 @@ class AddPresetVisibility(AddPresetBase, Operator):
 
 # Draw into an existing panel
 def visibility_func(self, context):
-    prefs = bpy.context.preferences.addons['PresetterProfessional'].preferences
+    prefs = bpy.context.preferences.addons[addon_name].preferences
     layout = self.layout
 
     if prefs.vis == True:

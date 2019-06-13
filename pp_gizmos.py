@@ -1,6 +1,10 @@
-import bpy
+import bpy, os
 from bpy.types import Operator, Menu
 from bl_operators.presets import AddPresetBase
+
+script_file = os.path.realpath(__file__)
+directory = os.path.dirname(script_file)
+addon_name = os.path.basename(os.path.normpath(directory))
 
 class GIZMO_MT_draw_presets(Menu):
     bl_label = "Gizmo Presets"
@@ -43,7 +47,7 @@ class AddPresetGizmo(AddPresetBase, Operator):
 def gizmo_func(self, context):
     layout = self.layout
 
-    prefs = bpy.context.preferences.addons['PresetterProfessional'].preferences
+    prefs = bpy.context.preferences.addons[addon_name].preferences
     layout = self.layout
 
     if prefs.giz == True:
@@ -51,3 +55,4 @@ def gizmo_func(self, context):
         row.menu(GIZMO_MT_draw_presets.__name__, text=GIZMO_MT_draw_presets.bl_label)
         row.operator(AddPresetGizmo.bl_idname, text="", icon='ADD')
         row.operator(AddPresetGizmo.bl_idname, text="", icon='REMOVE').remove_active = True
+

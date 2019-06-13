@@ -1,6 +1,10 @@
-import bpy
+import bpy, os
 from bpy.types import Operator, Menu
 from bl_operators.presets import AddPresetBase
+
+script_file = os.path.realpath(__file__)
+directory = os.path.dirname(script_file)
+addon_name = os.path.basename(os.path.normpath(directory))
 
 class ORPIV_MT_draw_presets(Menu):
     bl_label = "Orientation and Pivot Presets"
@@ -32,10 +36,11 @@ class AddPresetOrpiv(AddPresetBase, Operator):
 def orpiv_func(self, context):
     layout = self.layout
 
-    prefs = bpy.context.preferences.addons['PresetterProfessional'].preferences
+    prefs = bpy.context.preferences.addons[addon_name].preferences
     layout = self.layout
 
     if prefs.orpiv == True:
+        layout.label(text="Orientation and Pivot Presets")
         row = layout.row(align=True)
         row.menu(ORPIV_MT_draw_presets.__name__, text=ORPIV_MT_draw_presets.bl_label)
         row.operator(AddPresetOrpiv.bl_idname, text="", icon='ADD')
