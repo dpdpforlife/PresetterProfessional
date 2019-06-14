@@ -1,6 +1,6 @@
 # PresetterProfessional
 
-PresetterProfessional, besides being questionable use of the english language, is an addon for Blender 2.80+ for saving presets for Shading, Visibility, Snapping, and Transform Settings. Beyond saving indvidual categories of settings, PresetterProfessional (PP) has a few convenient combo Presetters that combine categories of settings to speed your workflow even more.
+PresetterProfessional, besides being questionable use of the English language, is an addon for Blender 2.80+ for saving presets for Shading, Visibility, Snapping, and Transform Settings. Beyond saving individual categories of settings, PresetterProfessional (PP) has a few convenient combo Presetters that combine categories of settings to speed your workflow even more.
 
 **Presets for The 3d View**
 
@@ -13,13 +13,12 @@ PresetterProfessional lets you store and recall settings in several categories.
 * Snapping Settings
 
 **Powerful Combo Presetters**
-* Combination Shading and Overlays Presets - Get all of your settings for the way you work in one preset instead of having to change multiple settings everytime you change tasks.
+* Combination Shading and Overlays Presets - Get all of your settings for the way you work in one preset instead of having to change multiple settings every time you change tasks.
 * Orientation and Pivot Combos - This powerful Presetter lets you store your favorite combinations of Pivot and Orientation. This is great when used with the 3d Cursor Presetters. Set your Orientation and Pivot Point to 3d Cursor for an ultra intuitive workflow. Set Local Orientation, Individual Origins, and Only Origins in one go. These could almost be seen as workflow presets.
 
 **Presetters Crowding Your Menus?**
 
 Let's face it. You probably don't need to recall settings for all of these categories. If you never want to change Gizmo settings en masse, just turn off the option in the Addon Preferences.
-
 ![Preferences Pane](https://i.ibb.co/VHSNGvx/Preferences.png)
 
 **Feast Your Eyes Upon All of the Presetters Available!**
@@ -42,7 +41,7 @@ Save snapping settings like Projection, Alignment, and Target
 
 ![3D Cursor](https://i.ibb.co/pX11nm4/Cursor.png)
 
-Recal Cursor location and rotation from the 3D Cursor panel...
+Recall Cursor location and rotation from the 3D Cursor panel...
 
 ![Cursor Pivot](https://i.ibb.co/fDqsynw/Cursor-Pivot.png)
 
