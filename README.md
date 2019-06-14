@@ -17,6 +17,7 @@ PresetterProfessional lets you store and recall settings in several categories.
 * Orientation and Pivot Combos - This powerful Presetter lets you store your favorite combinations of Pivot and Orientation. This is great when used with the 3d Cursor Presetters. Set your Orientation and Pivot Point to 3d Cursor for an ultra intuitive workflow. Set Local Orientation, Individual Origins, and Only Origins in one go. These could almost be seen as workflow presets.
 
 **Presetters Crowding Your Menus**
+
 Let's face it. You probably don't need to recall settings for all of these categories. If you never want to change Gizmo settings en masse, just turn off the option in the Addon Preferences.
 ![Preferences Pane](https://i.ibb.co/VHSNGvx/Preferences.png)
 
