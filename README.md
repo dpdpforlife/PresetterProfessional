@@ -24,36 +24,36 @@ Let's face it. You probably don't need to recall settings for all of these categ
 
 **Feast Your Eyes Upon All of the Presetters Available!**
 
-![Object Types](https://i.ibb.co/bQNvPdJ/Visibility.png)
-
 Object Type Visibility and Selectibility
 
-![Gizmo](https://i.ibb.co/PQcTsM5/Gizmos.png)
+![Object Types](https://i.ibb.co/bQNvPdJ/Visibility.png)
 
 Store and recall gizmo availability.
 
-![Overlays](https://i.ibb.co/sKvmpBK/Overlays.png)
+![Gizmo](https://i.ibb.co/PQcTsM5/Gizmos.png)
 
 Store the visibility of the overlays you use for your different workflows.
 
-![Snapping](https://i.ibb.co/85TTNWF/Snapping.png)
+![Overlays](https://i.ibb.co/sKvmpBK/Overlays.png)
 
 Save snapping settings like Projection, Alignment, and Target
 
-![3D Cursor](https://i.ibb.co/pX11nm4/Cursor.png)
+![Snapping](https://i.ibb.co/85TTNWF/Snapping.png)
 
 Recall Cursor location and rotation from the 3D Cursor panel...
 
-![Cursor Pivot](https://i.ibb.co/fDqsynw/Cursor-Pivot.png)
+![3D Cursor](https://i.ibb.co/pX11nm4/Cursor.png)
 
 ...or from the Pivot Point pop up since it is common to set the cursor as a pivot point.
 
-![Combos](https://i.ibb.co/vq5HcwC/Shading-and-Visibility.png)
+![Cursor Pivot](https://i.ibb.co/fDqsynw/Cursor-Pivot.png)
 
 Powerful combo Presetters are available, like Shading and Visibility...
 
-![Transform](https://i.ibb.co/sqmjJhd/PPOrientation.png)
+![Combos](https://i.ibb.co/vq5HcwC/Shading-and-Visibility.png)
 
 ...or all of your transform settings (pivot and orientation).
+
+![Transform](https://i.ibb.co/sqmjJhd/PPOrientation.png)
 
 Join the discussion on [BlenderArtists.org](https://blenderartists.org/t/presetterprofessional/1164735)
