@@ -19,6 +19,7 @@ PresetterProfessional lets you store and recall settings in several categories.
 **Presetters Crowding Your Menus?**
 
 Let's face it. You probably don't need to recall settings for all of these categories. If you never want to change Gizmo settings en masse, just turn off the option in the Addon Preferences.
+
 ![Preferences Pane](https://i.ibb.co/VHSNGvx/Preferences.png)
 
 **Feast Your Eyes Upon All of the Presetters Available!**
