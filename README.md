@@ -52,7 +52,7 @@ Recall Cursor location and rotation from the 3D Cursor panel...
 
 Powerful combo Presetters are available, like Shading and Visibility...
 
-![Transform](https://i.ibb.co/fDqsynw/Cursor-Pivot.png)
+![Transform](https://i.ibb.co/sqmjJhd/PPOrientation.png)
 
 ...or all of your transform settings (pivot and orientation).
 
