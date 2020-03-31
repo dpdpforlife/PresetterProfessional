@@ -27,7 +27,7 @@ import bpy
 from . pp_visibility import VIS_MT_draw_presets, AddPresetVisibility, visibility_func
 from . pp_gizmos import GIZMO_MT_draw_presets, AddPresetGizmo, gizmo_func
 from . pp_overlays import OVERLAY_MT_draw_presets, AddPresetOverlay, overlay_func
-from . pp_orientation_pivot import ORPIV_MT_draw_presets, AddPresetOrpiv, orpiv_func
+#from . pp_orientation_pivot import ORPIV_MT_draw_presets, AddPresetOrpiv, orpiv_func
 from . pp_snapping import SNAP_MT_draw_presets, AddPresetSnap, snap_func
 from . pp_view import VIEW3D_MT_view_presets, VIEW3D_PT_view_presets, AddPresetView, draw_master
 from . pp_shading import SHADE_MT_draw_presets, AddPresetShade, shade_func
@@ -54,10 +54,10 @@ class PPAddonPreferences(AddonPreferences):
         default=True,
     ) 
 
-    orpiv: BoolProperty(
-        name="Orientation and Pivot Point",
-        default=True,
-    )
+    # orpiv: BoolProperty(
+    #     name="Orientation and Pivot Point",
+    #     default=True,
+    # )
 
     snap: BoolProperty(
         name="Snapping",
@@ -79,10 +79,10 @@ class PPAddonPreferences(AddonPreferences):
         default=True,
     )
 
-    curpiv: BoolProperty(
-        name="3D Cursor in Pivot Point Popover",
-        default=True,
-    )
+    # curpiv: BoolProperty(
+    #     name="3D Cursor in Pivot Point Popover",
+    #     default=True,
+    # )
 
     def draw(self, context):
         layout = self.layout
@@ -95,7 +95,7 @@ class PPAddonPreferences(AddonPreferences):
         row.prop(self, "ol")
         row.prop(self, "shade")
         row=box.row()
-        row.prop(self, "orpiv")
+        #row.prop(self, "orpiv")
         row.prop(self, "snap")
         row=box.row()
         row.prop(self, "cursor")
@@ -113,8 +113,8 @@ classes = (
     AddPresetGizmo,
     VIS_MT_draw_presets,
     AddPresetVisibility,
-    ORPIV_MT_draw_presets,
-    AddPresetOrpiv,
+    # ORPIV_MT_draw_presets,
+    # AddPresetOrpiv,
     SNAP_MT_draw_presets,
     AddPresetSnap,
     VIEW3D_MT_view_presets,
@@ -133,12 +133,12 @@ def register():
     bpy.types.VIEW3D_PT_overlay.prepend(overlay_func)
     bpy.types.VIEW3D_PT_gizmo_display.prepend(gizmo_func)
     bpy.types.VIEW3D_PT_object_type_visibility.prepend(visibility_func)
-    bpy.types.VIEW3D_PT_transform_orientations.prepend(orpiv_func)
+    # bpy.types.VIEW3D_PT_transform_orientations.prepend(orpiv_func)
     bpy.types.VIEW3D_PT_snapping.prepend(snap_func)
     bpy.types.VIEW3D_HT_header.append(draw_master)
     bpy.types.VIEW3D_PT_shading.prepend(shade_func)
     bpy.types.VIEW3D_PT_view3d_cursor.append(cursor_func)
-    bpy.types.VIEW3D_PT_pivot_point.prepend(curpiv_func)
+    # bpy.types.VIEW3D_PT_pivot_point.prepend(curpiv_func)
 
 
 def unregister():
@@ -148,12 +148,12 @@ def unregister():
     bpy.types.VIEW3D_PT_overlay.remove(overlay_func)
     bpy.types.VIEW3D_PT_gizmo_display.remove(gizmo_func)
     bpy.types.VIEW3D_PT_object_type_visibility.remove(visibility_func)
-    bpy.types.VIEW3D_PT_transform_orientations.remove(orpiv_func)
+    # bpy.types.VIEW3D_PT_transform_orientations.remove(orpiv_func)
     bpy.types.VIEW3D_PT_snapping.remove(snap_func)
     bpy.types.VIEW3D_HT_header.remove(draw_master)
     bpy.types.VIEW3D_PT_shading.remove(shade_func)
     bpy.types.VIEW3D_PT_view3d_cursor.remove(cursor_func)
-    bpy.types.VIEW3D_PT_pivot_point.remove(curpiv_func)
+    # bpy.types.VIEW3D_PT_pivot_point.remove(curpiv_func)
 
 
 if __name__ == "__main__":
